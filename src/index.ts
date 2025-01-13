@@ -1,10 +1,9 @@
 import { serve } from "@hono/node-server"
 
 import app from "./app.js"
-
-const port = 3000
+import parsedEnv from "./lib/env.js"
 
 serve({
   fetch: app.fetch,
-  port,
+  port: parsedEnv.PORT,
 })
