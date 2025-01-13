@@ -1,7 +1,7 @@
 import { serve } from "@hono/node-server"
 
-import app from "./app.js"
-import parsedEnv from "./lib/env.js"
+import app from "@/app.js"
+import parsedEnv from "@/lib/env.js"
 
 serve({
   fetch: app.fetch,
