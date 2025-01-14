@@ -4,9 +4,14 @@ import { requestId } from "hono/request-id"
 import type { AppBindings } from "@/lib/types.js"
 
 import { notFound, onError, pinoLogger, serveEmojiFavicon } from "@/middlewares/index.js"
+import { defaultHook } from "@/openapi/index.js"
 
 export function createRouter() {
-  return new OpenAPIHono<AppBindings>()
+  return new OpenAPIHono<AppBindings>(
+    {
+      defaultHook,
+    },
+  )
 }
 
 export default function createApp() {
