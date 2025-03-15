@@ -1,4 +1,4 @@
-import type { ZodSchema } from "./types.js"
+import type { ZodSchema } from "@/openapi/helpers/types.js"
 
 function jsonContent<
   T extends ZodSchema,

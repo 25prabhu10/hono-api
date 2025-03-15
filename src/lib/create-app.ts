@@ -1,3 +1,10 @@
+/**
+ * Purpose: Create the application instance.
+ * This file is responsible for creating the application instance.
+ * It uses the hono library to create the application instance.
+ * Setup the application instance with the necessary middlewares and error handlers.
+ */
+
 import { OpenAPIHono } from "@hono/zod-openapi"
 import { requestId } from "hono/request-id"
 

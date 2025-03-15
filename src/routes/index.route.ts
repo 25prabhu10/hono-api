@@ -5,6 +5,8 @@ import { OK } from "@/lib/http-status-codes.js"
 import { jsonContent } from "@/openapi/helpers/index.js"
 import createMessageObjectSchema from "@/openapi/schemas/create-message-object.js"
 
+// Register Index route
+// Replace Tasks related details with your application details
 const router = createRouter()
   .openapi(
     createRoute({
