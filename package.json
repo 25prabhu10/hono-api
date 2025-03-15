@@ -2,6 +2,21 @@
   "name": "hono-api",
   "type": "module",
   "version": "0.0.1",
+  "description": "Template for building APIs with Hono",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/25prabhu10/hono-api.git"
+  },
+  "keywords": [
+    "hono",
+    "api",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=18.17.0"
+  },
   "scripts": {
     "dev": "tsx watch --env-file=.env src/index.ts",
     "lint": "eslint --cache .",

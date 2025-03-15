@@ -1,7 +1,7 @@
 # REST API
 
-A simple API built with [Hono](https://hono.dev/)
+This is a REST API template built with [Hono](https://hono.dev/) and used [Drizzle ORM](https://orm.drizzle.team/) for database operations.
 
-TODO:
+## ToDos
 
 - [ ] Add documentation
