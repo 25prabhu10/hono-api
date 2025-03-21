@@ -11,7 +11,7 @@ import { z } from "zod"
 
 // Schema for the environment variables
 const EnvSchema = z.object({
-  NODE_ENV: z.enum(["development", "production"]),
+  NODE_ENV: z.enum(["development", "production", "test"]),
   PORT: z.coerce.number().max(9999),
   LOG_LEVEL: z.enum(["fatal", "error", "warn", "info", "debug", "trace", "silent"]),
   DATABASE_URL: z.string().url(),
